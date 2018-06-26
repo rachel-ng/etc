@@ -7,8 +7,8 @@ Just in case my calculator ever gets cleared, because these were made with liter
 In the order they appear in on my ti-84
 
 1. CIRCLES (fin. 06/25)
-2. EVAL
-3. GEO
+2. EVAL (fin. 06/25)
+3. GEO (started 06/25)
 4. MISC
 5. QUAD
 6. TRI
