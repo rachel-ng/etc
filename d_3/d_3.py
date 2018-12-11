@@ -49,9 +49,11 @@ for i in cleaned_lines:
 
 print(locations2)
 
+
+baddddddd = {}
 for i in locations2.values():
-    if not(i == "void"):
-        print (i)
+    if not(i in baddddddd.keys()):
+        baddddddd[i] = ""
 
 #print(bad)
 
