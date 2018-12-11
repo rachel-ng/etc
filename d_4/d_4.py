@@ -33,5 +33,9 @@ for i in cleaned_lines:
 mon = list(months.keys())
 print (mon)
 
+for m in mon:
+    m = dict()
+    print (m + ": " + m.values())
+
 for m in months:
     print(months[m])
