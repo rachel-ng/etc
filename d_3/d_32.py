@@ -57,10 +57,10 @@ ok_claims = {}
 
 for i in claimed:
     if len(i) == 1:
-        if not(str(i[0]) in ok_claims.keys()):
-            ok_claims[str(i[0])] = 1
+        if not(int(i[0]) in ok_claims.keys()):
+            ok_claims[int(i[0])] = 1
         else:
-            ok_claims[str(i[0])] += 1
+            ok_claims[int(i[0])] += 1
 
 print(ok_claims)
 print(total_inches)
