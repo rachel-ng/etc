@@ -14,7 +14,6 @@ def process(o_line):
 cleaned_lines = []
 
 for i in file_lines:
-    print (process(i))
     cleaned_lines.append(process(i))
 
 print (cleaned_lines)
