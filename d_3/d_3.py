@@ -71,3 +71,5 @@ for i in cleaned_lines_2:
             d -= 1
         d = int(i[4])
         c -= 1
+
+print(claims)
