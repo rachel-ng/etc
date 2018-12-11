@@ -43,7 +43,7 @@ for i in cleaned_lines:
         c -= 1
 
 print(locations)
-print(claims)
+print(claims.values())
 
 
 sum = 0
