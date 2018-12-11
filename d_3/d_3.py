@@ -27,8 +27,8 @@ for i in cleaned_lines:
     c = int(i[3])
     d = int(i[4])
     while c > -1:
-        x = a + c
         while d > -1:
+            x = a + c
             y = b + d
             z = str(x) + "," + str(y)
             print(z)
