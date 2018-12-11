@@ -52,7 +52,6 @@ for i in cleaned_lines:
 
 baddddddd = {}
 for i in locations2.values():
-    if (locations2)
     if not(i in baddddddd.keys()):
         baddddddd[i] = ""
 
