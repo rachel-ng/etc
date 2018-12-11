@@ -49,7 +49,11 @@ for i in cleaned_lines:
 
 print(locations2)
 
-print(bad)
+for i in locations2.values():
+    if not(i == "void"):
+        print (i)
+
+#print(bad)
 
 sum = 0
 for i in locations.values():
