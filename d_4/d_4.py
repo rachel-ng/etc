@@ -16,6 +16,8 @@ cleaned_lines = []
 for i in file_lines:
     cleaned_lines.append(process(i))
 
+cleaned_lines.sort()
+
 print (cleaned_lines)
 
 for i in cleaned_lines:
