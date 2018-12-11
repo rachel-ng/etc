@@ -97,7 +97,6 @@ for x in yikes:
     if x[:15] == "qyoeizfvmbrstpk":
         qyoeizfvmbrstpk.append(x[15:])
 
-print(qyoeizfvmbrstpk)
 
 try_this = []
 for i in first_letters.keys():
@@ -110,3 +109,5 @@ for i in first_letters.keys():
 print(try_this)
 
 print(len("qyoeizfvmbrstpk"))
+
+print(qyoeizfvmbrstpk)
