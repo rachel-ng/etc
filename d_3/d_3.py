@@ -11,6 +11,8 @@ def process(o_line):
     #print(c_line)
     return c_line
 
+for i in file_lines:
+    print(process(i))
 
 
 locations = {}
@@ -18,11 +20,11 @@ locations = {}
 print(['claim number', 'x left', 'x top', 'x wide', 'x tall'])
 
 for i in file_lines:
+    print(process(i))
     a = int(i[1])
     b = int(i[2])
     c = int(i[3])
     d = int(i[4])
-    print(process(i))
     while c > 0:
         x = a + c
         while d > 0:
