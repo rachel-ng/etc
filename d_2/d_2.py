@@ -110,4 +110,5 @@ print(try_this)
 
 print(len("qyoeizfvmbrstpk"))
 
+qyoeizfvmbrstpk.sort()
 print(qyoeizfvmbrstpk)
