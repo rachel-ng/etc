@@ -81,8 +81,3 @@ for i in claims.keys():
         valid_claims[str(claims[i])] = ""
     else:
         print ("")
-
-for i in claims:
-    #print (i)
-    #print (claims[i])
-    print ("")
