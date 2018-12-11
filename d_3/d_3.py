@@ -11,19 +11,21 @@ def process(o_line):
     #print(c_line)
     return c_line
 
+cleaned_lines = []
+
 for i in file_lines:
-    print(process(i))
+    cleaned_lines.append(process(i))
 
 
 locations = {}
 
 print(['claim number', 'x left', 'x top', 'x wide', 'x tall'])
 
-for i in file_lines:
-    a = int(process(i[1]))
-    b = int(process(i[2]))
-    c = int(process(i[3]))
-    d = int(process(i[4]))
+for i in cleaned_lines:
+    a = int(i[1])
+    b = int(i[2])
+    c = int(i[3])
+    d = int(i[4])
     while c > 0:
         x = a + c
         while d > 0:
