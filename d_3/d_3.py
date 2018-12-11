@@ -62,7 +62,8 @@ for i in cleaned_lines_2:
             z = str(x) + "," + str(y)
             #print(z)
             if not(z in locations.keys()):
-                locations[z] = [0,i[0]]
+                locations[z] = []
+                locations[z].append(i[0])
             else:
                 locations[z].append(i[0])
             d -= 1
