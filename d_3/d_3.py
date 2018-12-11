@@ -11,5 +11,11 @@ def process(o_line):
     #print(c_line)
     return c_line
 
+
+
+locations = {}
+
+print(['claim number', 'x left', 'x top', 'x wide', 'x tall'])
+
 for i in file_lines:
     print(process(i))
