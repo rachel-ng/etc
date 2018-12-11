@@ -26,9 +26,8 @@ for i in cleaned_lines:
     b = int(i[2]) # stay the same
     c = int(i[3])
     d = int(i[4])
-    while c + 1 > -1:
-        c -= 1
-        while d > -1:
+    while c != 0:
+        while d != 0:
             x = a + c
             y = b + d
             z = str(x) + "," + str(y)
@@ -38,6 +37,7 @@ for i in cleaned_lines:
             else:
                 locations[z] += 1
             d -= 1
+        c -= 1
 
 #print(locations)
 
