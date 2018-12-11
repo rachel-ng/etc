@@ -38,10 +38,10 @@ for i in cleaned_lines:
             #print(z)
             if not(z in locations.keys()):
                 locations[z] = 1
-                locations2[z] = i[0]
+                locations2[i[0]] = i[0]
             else:
                 locations[z] += 1
-                locations2[z] = "void"
+                locations2[i[0]] = "void"
                 bad[i[0]] = ""
             d -= 1
         d = int(i[4])
@@ -52,6 +52,7 @@ for i in cleaned_lines:
 
 baddddddd = {}
 for i in locations2.values():
+    if (locations2)
     if not(i in baddddddd.keys()):
         baddddddd[i] = ""
 
