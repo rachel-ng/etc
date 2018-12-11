@@ -67,7 +67,7 @@ for i in cleaned_lines_2:
                 claims[z] = []
                 claims[z].append(i[0])
             else:
-                claims[z].append(i[0])
+                claims[z].append("void")
             d -= 1
         d = int(i[4])
         c -= 1
