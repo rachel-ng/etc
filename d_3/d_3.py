@@ -37,6 +37,8 @@ for i in cleaned_lines:
             else:
                 locations[z] += 1
             d -= 1
+        d = int(i[4])
+        c -= 1
 
 #print(locations)
 
