@@ -62,8 +62,8 @@ for i in claimed:
         else:
             ok_claims[str(i)] += 1
 
-#print(ok_claims)
-#print(total_inches)
+print(ok_claims)
+print(total_inches)
 
 sum = 0
 for i in locations.values():
