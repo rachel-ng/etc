@@ -39,7 +39,7 @@ for i in cleaned_lines:
             d -= 1
         c -= 1
 
-print(locations)
+#print(locations)
 
 sum = 0
 for i in locations.values():
