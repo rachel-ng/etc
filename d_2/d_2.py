@@ -92,6 +92,13 @@ for i in first_letters['u']: # len = 25
 for i in yikes:
     print (i)
 
+qyoeizfvmbrstpk = []
+for x in yikes:
+    if x[:15] == "qyoeizfvmbrstpk":
+        qyoeizfvmbrstpk.append(x[15:])
+
+print(qyoeizfvmbrstpk)
+
 try_this = []
 for i in first_letters.keys():
     if i == 'u':
