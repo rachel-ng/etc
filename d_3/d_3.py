@@ -36,4 +36,4 @@ for i in file_lines:
             d -= 1
         c -= 1
 
-print(locations
+print(locations)
