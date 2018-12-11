@@ -47,7 +47,7 @@ for i in cleaned_lines:
         d = int(i[4])
         c -= 1
 
-print(locations2)
+#print(locations2)
 
 
 baddddddd = {}
@@ -56,6 +56,7 @@ for i in locations2.values():
         baddddddd[i] = ""
 
 #print(bad)
+print(baddddddd)
 
 sum = 0
 for i in locations.values():
