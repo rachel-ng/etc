@@ -83,4 +83,4 @@ for i in check:
         first_letters[i[0]].append(i)
 
 for i in first_letters:
-    print (first_letters[i])
+    print (i + "/t" + first_letters[i])
