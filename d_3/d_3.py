@@ -26,10 +26,9 @@ for i in cleaned_lines:
     b = int(i[2]) # stay the same
     c = int(i[3])
     d = int(i[4])
-    while c != 0:
-        print (c)
-        while d != 0:
-            x = a + c
+    while c > 0:
+        x = a + c
+        while d > 0:
             y = b + d
             z = str(x) + "," + str(y)
             print(z)
