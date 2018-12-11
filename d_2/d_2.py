@@ -3,7 +3,7 @@ f = open('input.txt', "r")
 lines = f.readlines()
 f.close()
 
-print (list(lines))
+#print (list(lines))
 
 file_lines = list(lines)
 
