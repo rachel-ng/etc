@@ -25,8 +25,8 @@ print(['claim number', 'x left', 'x top', 'x wide', 'x tall'])
 
 bad = {}
 
-i = 3
-while i > 0:
+ad = 3
+while ad > 0:
     for i in cleaned_lines:
         a = int(i[1]) # stay the same
         b = int(i[2]) # stay the same
@@ -48,7 +48,7 @@ while i > 0:
                 d -= 1
             d = int(i[4])
             c -= 1
-    i -= 1
+    ad -= 1
 
 print(locations2)
 
