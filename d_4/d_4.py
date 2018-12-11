@@ -21,8 +21,11 @@ cleaned_lines.sort()
 #print (cleaned_lines)
 
 months = {}
+guard_ids = {}
 
 for i in cleaned_lines:
+    if (len(i) == 7):
+        guard_ids[i[3]]
     if not(i[0] in months.keys()):
         months[i[0]] = []
         months[i[0]].append(i[1:])
@@ -33,3 +36,6 @@ for i in cleaned_lines:
 for m in months:
     for i in months[m]:
         print (m + ":\t" + str(i))
+
+for g in guard_ids:
+    print(g)
