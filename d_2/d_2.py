@@ -82,4 +82,5 @@ for i in check:
     else:
         first_letters[i[0]].append(i)
 
-print(first_letters)
+for i in first_letters:
+    print (first_letters[i])
