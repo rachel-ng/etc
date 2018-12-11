@@ -30,5 +30,8 @@ for i in cleaned_lines:
     else:
         months[i[0]].append(i[1:])
 
+mon = list(months.keys())
+print (mon)
+
 for m in months:
     print(months[m])
