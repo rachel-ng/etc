@@ -35,7 +35,8 @@ print (mon)
 
 for m in mon:
     m = dict()
-    print (m + ": " + m.values())
+
+print(mon)
 
 for m in months:
     print(months[m])
