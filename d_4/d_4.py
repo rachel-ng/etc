@@ -34,7 +34,7 @@ mon = list(months.keys())
 print (mon)
 
 for m in mon:
-    m = dict()
+    m = dict(0=0)
 
 print(mon)
 
