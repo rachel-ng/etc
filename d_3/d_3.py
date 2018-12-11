@@ -40,3 +40,10 @@ for i in cleaned_lines:
         c -= 1
 
 print(locations)
+
+sum = 0
+for i in locations.values():
+    if i > 1:
+        sum += 1
+
+print(sum)
