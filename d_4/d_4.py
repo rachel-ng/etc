@@ -30,4 +30,5 @@ for i in cleaned_lines:
     else:
         months[i[0]].append(i[1:])
 
-print(months)
+for m in months:
+    print (m)
