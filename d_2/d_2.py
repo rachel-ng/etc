@@ -96,5 +96,5 @@ for i in first_letters.keys():
         print ("no")
     else:
         for u in i:
-            print(u)
-            print (len(u))
+            print(first_letters[u])
+            print (len(first_letters[u]))
