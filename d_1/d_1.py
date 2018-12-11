@@ -28,6 +28,7 @@ def sum (a):
 
             if (nums[num] == 2):
                 sol = num
-    print (num, sol)
+                print (sol)
+    #print (num, sol)
 
 sum(0)
