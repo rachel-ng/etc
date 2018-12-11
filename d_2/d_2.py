@@ -102,4 +102,4 @@ for i in first_letters.keys():
 
 print(try_this)
 
-print(len(qyoeizfvmbrstpk))
+print(len("qyoeizfvmbrstpk"))
