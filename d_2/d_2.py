@@ -22,7 +22,7 @@ def compare(box_id):
         else:
             letters[box_id[i]] = letters[box_id[i]] + 1
         i += 1
-    print(letters)
+    #print(letters)
     return letters
 
 def mult(letters):
