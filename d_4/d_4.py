@@ -18,7 +18,16 @@ for i in file_lines:
 
 cleaned_lines.sort()
 
-print (cleaned_lines)
+#print (cleaned_lines)
+
+months = {}
 
 for i in cleaned_lines:
-    print (i)
+    if not(i[0] in months.keys()):
+        months[i[0]] = []
+        months[i[0]].append(i)
+        print(i[0])
+    else:
+        months[i[0]].append(i)
+
+print(months)
