@@ -67,14 +67,21 @@ for i in cleaned_lines_2:
                 claims[z] = []
                 claims[z].append(i[0])
             else:
-                claims[z].append("void")
+                claims[z].append(i[0])
             d -= 1
         d = int(i[4])
         c -= 1
 
-print(claims)
-print(claims.values())
+#print(claims)
+
+valid_claims = {}
+
+for i in claims.values():
+    if not(i in valid_claims.keys()):
+        valid_claims[i] = ""
+    else:
+        print""
 
 for i in claims:
-    print (i)
-    print (claims[i])
+    #print (i)
+    #print (claims[i])
