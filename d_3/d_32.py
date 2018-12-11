@@ -56,12 +56,12 @@ total_inches = {}
 
 for i in claimed:
     if len(i) == 1:
-        if not(i in ok_claims.keys()):
+        if not(str(i) in ok_claims.keys()):
             total_inches[i] = int(cleaned_lines[i][3]) * int(cleaned_lines[i][4])
             print(int(cleaned_lines[i][3]) * int(cleaned_lines[i][4]))
-            ok_claims[i] = 1
+            ok_claims[str(i)] = 1
         else:
-            ok_claims[i] += 1
+            ok_claims[str(i)] += 1
 
 #print(ok_claims)
 #print(total_inches)
