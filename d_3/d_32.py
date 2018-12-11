@@ -67,7 +67,7 @@ print(total_inches)
 
 for i in ok_claims:
     if ok_claims[i] == total_inches[i]:
-        print i
+        print (i)
 
 sum = 0
 for i in locations.values():
