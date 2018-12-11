@@ -30,14 +30,6 @@ for i in cleaned_lines:
     else:
         months[i[0]].append(i[1:])
 
-mon = list(months.keys())
-print (mon)
-
-for m in mon:
-    m = {}
-    m[""] = ""
-
-print(mon)
-
 for m in months:
-    print(months[m])
+    for i in m:
+        print(i)
