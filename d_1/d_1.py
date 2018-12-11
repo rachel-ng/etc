@@ -28,10 +28,6 @@ def sum (a):
 
             if (nums[num] == 2):
                 sol = num
-                print (num)
-        print (num, sol)
-
-def dupli (num):
-    print (num)
+    print (num, sol)
 
 sum(0)
