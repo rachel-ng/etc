@@ -114,3 +114,7 @@ qyoeizfvmbrstpk.sort()
 
 for i in qyoeizfvmbrstpk:
     print(i)
+
+
+print((lambda strs: (lambda a,b: "".join([a[i] for i in range(len(a)) if a[i] == b[i]]))(*[(l1.strip(),l2.strip()) for l1 in strs for l2 in strs if l1 != l2 and sum(1 for i in range(len(l1)-1) if l1[i] != l2[i]) < 2][0]))(open('input.txt', 'r').readlines()))
+
