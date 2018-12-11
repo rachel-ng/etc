@@ -51,9 +51,19 @@ claimed.sort()
 
 #print(claimed)
 
+ok_claims = {}
+total_inches = {}
+
 for i in claimed:
     if len(i) == 1:
-        print (i)
+        if not(i in ok_claims.keys()):
+            total_inches[i] = int(cleaned_lines[i][3]) * int(cleaned_lines[i][4])
+            ok_claims[i] = 1
+        else:
+            ok_claims[i] += 1
+
+print(ok_claims)
+print(total_inches)
 
 sum = 0
 for i in locations.values():
