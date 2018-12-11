@@ -52,6 +52,9 @@ while ad > 0:
 
 print(locations2)
 
+que = list(locations2.values())
+que.sort()
+print(que)
 
 baddddddd = {}
 for i in locations2.values():
