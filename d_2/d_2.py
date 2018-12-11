@@ -101,3 +101,5 @@ for i in first_letters.keys():
             try_this.append(u[0:])
 
 print(try_this)
+
+print(len(qyoeizfvmbrstpk))
