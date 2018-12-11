@@ -19,6 +19,7 @@ for i in file_lines:
 
 locations = {}
 claims = {}
+total_inches = {}
 
 print(['claim number', 'x left', 'x top', 'x wide', 'x tall'])
 
@@ -27,6 +28,7 @@ for i in cleaned_lines:
     b = int(i[2]) # stay the same
     c = int(i[3])
     d = int(i[4])
+    total_inches[int(i[0])] = c * d
     while c > 0:
         x = a + c
         while d > 0:
@@ -52,12 +54,11 @@ claimed.sort()
 #print(claimed)
 
 ok_claims = {}
-total_inches = {}
 
 for i in claimed:
     if len(i) == 1:
         if not(str(i) in ok_claims.keys()):
-            total_inches[str(i)] = int(cleaned_lines[i][3]) * int(cleaned_lines[i][4])
+            total_inches[str(i)] =
             print(int(cleaned_lines[i][3]) * int(cleaned_lines[i][4]))
             ok_claims[str(i)] = 1
         else:
