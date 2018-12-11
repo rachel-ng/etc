@@ -25,7 +25,7 @@ guard_ids = {}
 
 for i in cleaned_lines:
     if (len(i) == 7):
-        guard_ids[i[3]]
+        guard_ids[i[4]] = 0
     if not(i[0] in months.keys()):
         months[i[0]] = []
         months[i[0]].append(i[1:])
