@@ -72,3 +72,14 @@ check = list(neither.keys())
 check.sort()
 
 print(check)
+
+
+first_letters = {}
+
+for i in check:
+    if not(i[0] in first_letters.keys()):
+        first_letters[i[0]] = [i]
+    else:
+        first_letters[i[0]].append(i)
+
+print(first_letters)
