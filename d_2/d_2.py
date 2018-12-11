@@ -111,4 +111,6 @@ print(try_this)
 print(len("qyoeizfvmbrstpk"))
 
 qyoeizfvmbrstpk.sort()
-print(qyoeizfvmbrstpk)
+
+for i in qyoeizfvmbrstpk:
+    print(i)
