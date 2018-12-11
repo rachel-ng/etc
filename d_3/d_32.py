@@ -45,7 +45,7 @@ for i in cleaned_lines:
 #print(locations)
 #print(claims.values())
 
-cladimed = list(claims.values())
+claimed = list(claims.values())
 
 claimed.sort()
 
