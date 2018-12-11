@@ -22,13 +22,13 @@ locations = {}
 print(['claim number', 'x left', 'x top', 'x wide', 'x tall'])
 
 for i in cleaned_lines:
-    a = int(i[1])
-    b = int(i[2])
+    a = int(i[1]) # stay the same
+    b = int(i[2]) # stay the same
     c = int(i[3])
     d = int(i[4])
-    while c > 0:
+    while c > -1:
         x = a + c
-        while d > 0:
+        while d > -1:
             y = b + d
             z = str(x) + "," + str(y)
             print(z)
