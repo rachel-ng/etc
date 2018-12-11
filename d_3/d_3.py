@@ -38,7 +38,7 @@ for i in cleaned_lines:
             #print(z)
             if not(z in locations.keys()):
                 locations[z] = 1
-                locations2[z] = 1
+                locations2[z] = i[0]
             else:
                 locations[z] += 1
                 locations2[z] = "void"
