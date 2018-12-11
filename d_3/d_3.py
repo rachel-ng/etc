@@ -77,10 +77,9 @@ for i in cleaned_lines_2:
 valid_claims = {}
 
 for i in claims.keys():
+    print(i)
     for c in i:
         if not(c in valid_claims.keys()):
             valid_claims[c] = ""
-            print(valid_claims)
-        print(valid_claims)
 
 print(valid_claims)
