@@ -25,7 +25,7 @@ print(['claim number', 'x left', 'x top', 'x wide', 'x tall'])
 
 bad = {}
 
-ad = 3
+ad = 2
 while ad > 0:
     for i in cleaned_lines:
         a = int(i[1]) # stay the same
