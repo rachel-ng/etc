@@ -19,4 +19,4 @@ for i in file_lines:
 print (cleaned_lines)
 
 for i in cleaned_lines:
-
+    print (i)
