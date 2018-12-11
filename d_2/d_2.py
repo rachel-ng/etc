@@ -93,7 +93,7 @@ print (yikes)
 
 for i in first_letters.keys():
     if i == 'u':
-        print "no"
+        print ("no")
     else:
         for u in i:
             print (len(u))
