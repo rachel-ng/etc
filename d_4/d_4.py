@@ -33,4 +33,4 @@ for i in cleaned_lines:
 for m in months:
     print (m)
     for i in m:
-        print(i)
+        print(m[i])
