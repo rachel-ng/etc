@@ -71,7 +71,7 @@ check = list(neither.keys())
 
 check.sort()
 
-print(check)
+#print(check)
 
 
 first_letters = {}
@@ -84,3 +84,10 @@ for i in check:
 
 for i in first_letters:
     print (i + "\t" + str(first_letters[i]))
+
+yikes = []
+for i in first_letters['u']:
+    print (len(i))
+    yikes.append(i[1:])
+
+print (yikes)
