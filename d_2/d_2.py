@@ -86,8 +86,14 @@ for i in first_letters:
     print (i + "\t" + str(first_letters[i]))
 
 yikes = []
-for i in first_letters['u']:
-    print (len(i))
+for i in first_letters['u']: # len = 25
     yikes.append(i[1:])
 
 print (yikes)
+
+for i in first_letters.keys():
+    if i == 'u':
+        print "no"
+    else:
+        for u in i:
+            print (len(u))
