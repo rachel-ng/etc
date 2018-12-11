@@ -73,3 +73,4 @@ for i in cleaned_lines_2:
         c -= 1
 
 print(claims)
+print(claims.values())
