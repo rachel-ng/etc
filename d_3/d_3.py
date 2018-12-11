@@ -7,7 +7,7 @@ f.close()
 file_lines = list(lines)
 
 def process(o_line):
-    c_line = o_line[1:].replace("@","").replace(","," ").replace("x"," ").rstrip("\n").split()
+    c_line = o_line[1:].replace("@","").replace(":","").replace(","," ").replace("x"," ").rstrip("\n").split()
     #print(c_line)
     return c_line
 
