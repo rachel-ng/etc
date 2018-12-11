@@ -80,7 +80,7 @@ for i in claims.values():
     if not(i in valid_claims.keys()):
         valid_claims[i] = ""
     else:
-        print""
+        print ("")
 
 for i in claims:
     #print (i)
