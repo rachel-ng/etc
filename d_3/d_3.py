@@ -31,7 +31,7 @@ for i in cleaned_lines:
         while d > 0:
             y = b + d
             z = str(x) + "," + str(y)
-            print(z)
+            #print(z)
             if not(z in locations.keys()):
                 locations[z] = 1
             else:
@@ -40,7 +40,7 @@ for i in cleaned_lines:
         d = int(i[4])
         c -= 1
 
-#print(locations)
+print(locations)
 
 sum = 0
 for i in locations.values():
