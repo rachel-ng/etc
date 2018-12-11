@@ -74,3 +74,7 @@ for i in cleaned_lines_2:
 
 print(claims)
 print(claims.values())
+
+for i in claims:
+    print (i)
+    print (claims[i])
