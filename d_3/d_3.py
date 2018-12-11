@@ -7,7 +7,7 @@ f.close()
 file_lines = list(lines)
 
 def process(o_line):
-    c_line = o_line.rstrip("\n").split()
+    c_line = o_line.rstrip("\n").strip("@").split()
     #print(c_line)
     return c_line
 
