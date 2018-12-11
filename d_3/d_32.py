@@ -42,9 +42,14 @@ for i in cleaned_lines:
         d = int(i[4])
         c -= 1
 
-print(locations)
+#print(locations)
 print(claims.values())
 
+claimed = list(claims.values())
+
+claimed.sort()
+
+print(claimed)
 
 sum = 0
 for i in locations.values():
