@@ -53,7 +53,7 @@ print(claimed)
 
 for i in claimed:
     if len(claimed[i]) == 1:
-        print i
+        print (i)
 
 sum = 0
 for i in locations.values():
