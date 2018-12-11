@@ -32,5 +32,4 @@ for i in cleaned_lines:
 
 for m in months:
     for i in months[m]:
-        print (i)
-
+        print (m + ":\t" + str(i))
