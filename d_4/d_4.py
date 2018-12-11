@@ -31,4 +31,5 @@ for i in cleaned_lines:
         months[i[0]].append(i[1:])
 
 for m in months:
-    print (m)
+    print(m)
+    print(months[m])
