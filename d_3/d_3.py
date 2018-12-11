@@ -79,3 +79,5 @@ valid_claims = {}
 for i in claims.keys():
     if not(str(claims[i]) in valid_claims.keys()):
         valid_claims[str(claims[i])] = ""
+
+print(valid_claims)
