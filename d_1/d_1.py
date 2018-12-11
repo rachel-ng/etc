@@ -10,13 +10,28 @@ def process(o_line):
     c_line = o_line.rstrip("\n")
     return c_line
 
-def sum ():
-    num = 0
-    for i in file_lines:
-        if (process(i)[0] == '+'):
-            num += int(process(i)[1:])
-        else:
-            num -= int(process(i)[1:])
-    return num
+nums={0:0}
 
-print(sum())
+def sum (a):
+    num = a
+    sol = 0
+    while (sol == 0):
+        for i in file_lines:
+            if (process(i)[0] == '+'):
+                num += int(process(i)[1:])
+            else:
+                num -= int(process(i)[1:])
+            if not(num in nums.keys()):
+                nums[num] = 1
+            else:
+                nums[num] = nums[num] + 1
+
+            if (nums[num] == 2):
+                sol = num
+                print (num)
+        print (num, sol)
+
+def dupli (num):
+    print (num)
+
+sum(0)
