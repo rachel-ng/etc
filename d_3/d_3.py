@@ -33,7 +33,7 @@ for i in cleaned_lines:
             z = str(x) + "," + str(y)
             print(z)
             if not(z in locations.keys()):
-                locations[z] = 0
+                locations[z] = 1
             else:
                 locations[z] += 1
             d -= 1
