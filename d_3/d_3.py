@@ -12,10 +12,11 @@ def process(o_line):
     return c_line
 
 cleaned_lines = []
+cleaned_lines_2 = []
 
 for i in file_lines:
     cleaned_lines.append(process(i))
-
+    cleaned_lines_2.append(process(i))
 
 locations = {}
 
@@ -48,3 +49,22 @@ for i in locations.values():
         sum += 1
 
 print(sum)
+
+for i in cleaned_lines_2:
+    a = int(i[1]) # stay the same
+    b = int(i[2]) # stay the same
+    c = int(i[3])
+    d = int(i[4])
+    while c > 0:
+        x = a + c
+        while d > 0:
+            y = b + d
+            z = str(x) + "," + str(y)
+            #print(z)
+            if not(z in locations.keys()):
+                locations[z] = [i[0]]
+            else:
+                locations[z].append(i[0])
+            d -= 1
+        d = int(i[4])
+        c -= 1
