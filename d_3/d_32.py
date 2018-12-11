@@ -51,6 +51,10 @@ claimed.sort()
 
 print(claimed)
 
+for i in claimed:
+    if len(claimed[i]) == 1:
+        print i
+
 sum = 0
 for i in locations.values():
     if i > 1:
