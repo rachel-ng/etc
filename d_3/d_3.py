@@ -25,27 +25,30 @@ print(['claim number', 'x left', 'x top', 'x wide', 'x tall'])
 
 bad = {}
 
-for i in cleaned_lines:
-    a = int(i[1]) # stay the same
-    b = int(i[2]) # stay the same
-    c = int(i[3])
-    d = int(i[4])
-    while c > 0:
-        x = a + c
-        while d > 0:
-            y = b + d
-            z = str(x) + "," + str(y)
-            #print(z)
-            if not(z in locations.keys()):
-                locations[z] = 1
-                locations2[i[0]] = i[0]
-            else:
-                locations[z] += 1
-                locations2[i[0]] = "void"
-                bad[i[0]] = ""
-            d -= 1
+i = 3
+while i > 0:
+    for i in cleaned_lines:
+        a = int(i[1]) # stay the same
+        b = int(i[2]) # stay the same
+        c = int(i[3])
         d = int(i[4])
-        c -= 1
+        while c > 0:
+            x = a + c
+            while d > 0:
+                y = b + d
+                z = str(x) + "," + str(y)
+                #print(z)
+                if not(z in locations.keys()):
+                    locations[z] = 1
+                    locations2[i[0]] = i[0]
+                else:
+                    locations[z] += 1
+                    locations2[i[0]] = "void"
+                    bad[i[0]] = ""
+                d -= 1
+            d = int(i[4])
+            c -= 1
+    i -= 1
 
 print(locations2)
 
