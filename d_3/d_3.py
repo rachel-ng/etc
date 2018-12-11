@@ -50,6 +50,8 @@ for i in locations.values():
 
 print(sum)
 
+claims = {}
+
 for i in cleaned_lines_2:
     a = int(i[1]) # stay the same
     b = int(i[2]) # stay the same
@@ -61,11 +63,11 @@ for i in cleaned_lines_2:
             y = b + d
             z = str(x) + "," + str(y)
             #print(z)
-            if not(z in locations.keys()):
-                locations[z] = []
-                locations[z].append(i[0])
+            if not(z in claims.keys()):
+                claims[z] = []
+                claims[z].append(i[0])
             else:
-                locations[z].append(i[0])
+                claims[z].append(i[0])
             d -= 1
         d = int(i[4])
         c -= 1
