@@ -35,6 +35,7 @@ print (mon)
 
 for m in mon:
     m = {}
+    m[""] = ""
 
 print(mon)
 
