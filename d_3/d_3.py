@@ -47,7 +47,7 @@ for i in cleaned_lines:
         d = int(i[4])
         c -= 1
 
-#print(locations2)
+print(locations2)
 
 
 baddddddd = {}
