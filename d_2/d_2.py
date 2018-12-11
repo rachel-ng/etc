@@ -90,7 +90,7 @@ for i in first_letters['u']: # len = 25
     yikes.append(i[1:])
 
 for i in yikes:
-    print (i + "\t" + str(yikes[i]))
+    print (i)
 
 try_this = []
 for i in first_letters.keys():
