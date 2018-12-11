@@ -43,13 +43,13 @@ for i in cleaned_lines:
         c -= 1
 
 #print(locations)
-print(claims.values())
+#print(claims.values())
 
 claimed = list(claims.values())
 
 claimed.sort()
 
-print(claimed)
+#print(claimed)
 
 for i in claimed:
     if len(i) == 1:
