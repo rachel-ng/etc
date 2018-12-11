@@ -19,8 +19,11 @@ for i in file_lines:
     cleaned_lines_2.append(process(i))
 
 locations = {}
+locations2 = {}
 
 print(['claim number', 'x left', 'x top', 'x wide', 'x tall'])
+
+bad = {}
 
 for i in cleaned_lines:
     a = int(i[1]) # stay the same
@@ -35,13 +38,18 @@ for i in cleaned_lines:
             #print(z)
             if not(z in locations.keys()):
                 locations[z] = 1
+                locations2[z] = 1
             else:
                 locations[z] += 1
+                locations2[z] = "void"
+                bad[i[0]] = ""
             d -= 1
         d = int(i[4])
         c -= 1
 
 #print(locations)
+
+print(bad)
 
 sum = 0
 for i in locations.values():
