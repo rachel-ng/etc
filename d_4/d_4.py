@@ -25,9 +25,9 @@ months = {}
 for i in cleaned_lines:
     if not(i[0] in months.keys()):
         months[i[0]] = []
-        months[i[0]].append(i)
+        months[i[0]].append(i[1:])
         print(i[0])
     else:
-        months[i[0]].append(i)
+        months[i[0]].append(i[1:])
 
 print(months)
