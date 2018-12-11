@@ -35,7 +35,7 @@ for i in cleaned_lines:
 
 for m in months:
     for i in months[m]:
-        print (m + ":\t" + str(i))
+        print (str(i))
 
 for g in guard_ids:
     print(g)
