@@ -94,10 +94,9 @@ print (yikes)
 try_this = []
 for i in first_letters.keys():
     if i == 'u':
-        print ("no")
+        print ("")
     else:
         for u in first_letters[i]:
-            print (len(u))
             try_this.append(u[0:])
 
 print(try_this)
