@@ -27,6 +27,7 @@ for i in cleaned_lines:
     c = int(i[3])
     d = int(i[4])
     while c != 0:
+        print (c)
         while d != 0:
             x = a + c
             y = b + d
