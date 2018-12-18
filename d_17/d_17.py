@@ -22,6 +22,7 @@ for i in file_lines:
     else:
         x[reeeee[0]] += 1
     oof = reeeee[1]
+    print (oof)
     uh = oof[0].split("...")
     print (uh)
     if not(uh[1] in y.keys()):
