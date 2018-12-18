@@ -21,7 +21,7 @@ for i in file_lines:
         x[reeeee[0]] = 1
     else:
         x[reeeee[0]] += 1
-    oof = reeeee[1].split("...")
+    oof = reeeee[1].replace("...",",").split(",")
     print (oof)
     if not(oof[1] in y.keys()):
         y[oof[1]] = [oof[0]]
