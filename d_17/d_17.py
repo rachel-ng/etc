@@ -25,7 +25,7 @@ for i in file_lines:
     one = oof[0]
     print (oof)
     print (one)
-    print (one.replace("...",","))
+    print (one.replace("..",","))
     if not(uh[1] in y.keys()):
         y[uh[1]] = [uh[0]]
     else:
