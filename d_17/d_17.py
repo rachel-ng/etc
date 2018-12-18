@@ -21,14 +21,13 @@ for i in file_lines:
         x[reeeee[0]] = 1
     else:
         x[reeeee[0]] += 1
-    oof = reeeee[1].split("...")
-    print (oof)
-    print (oof.type)
+    oof = reeeee[1]
+    uh = oof[0].split("...")
     print (reeeee[1].type)
-    if not(oof[1] in y.keys()):
-        y[oof[1]] = [oof[0]]
+    if not(uh[1] in y.keys()):
+        y[uh[1]] = [uh[0]]
     else:
-        y[oof[1]].append(oof[0])
+        y[uh[1]].append(uh[0])
 
 print (x)
 
