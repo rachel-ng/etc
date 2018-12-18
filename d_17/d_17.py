@@ -22,12 +22,12 @@ for i in file_lines:
     else:
         x[reeeee[0]] += 1
     oof = reeeee[1].split(",")
-    one = oof[0].replace("..",",")
+    one = oof[0].replace("..",",").split(",")
     print (one)
-    if not(uh[1] in y.keys()):
-        y[uh[1]] = [uh[0]]
+    if not(one[1] in y.keys()):
+        y[one[1]] = [one[0]]
     else:
-        y[uh[1]].append(uh[0])
+        y[one[1]].append(one[0])
 
 print (x)
 
