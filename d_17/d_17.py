@@ -13,6 +13,7 @@ def process(o_line):
 x = {}
 
 y = {}
+y2 = {}
 
 for i in file_lines:
     reeeee = process(i)
@@ -20,10 +21,11 @@ for i in file_lines:
         x[reeeee[0]] = 1
     else:
         x[reeeee[0]] += 1
-    if not(reeeee[1] in y.keys()):
-        y[reeeee[1]] = 1
+    oof = reeeee[1].split("...")
+    if not(oof[1] in y.keys()):
+        y[oof[1]] = [oof[0]]
     else:
-        y[reeeee[1]] += 1
+        y[oof[1]].append(oof[0])
 
 print (x)
 
