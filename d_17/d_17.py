@@ -26,8 +26,10 @@ for i in file_lines:
     print (one)
     if not(one[1] in y.keys()):
         y[one[1]] = [one[0]]
+        y2[one[0]] = 1
     else:
         y[one[1]].append(one[0])
+        y2[one[0]] = 1
 
 print (x)
 
