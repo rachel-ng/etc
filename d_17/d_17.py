@@ -23,7 +23,7 @@ for i in file_lines:
         x[reeeee[0]] += 1
     oof = reeeee[1]
     print (oof)
-    uh = oof[0].split("...")
+    uh = oof[0].replace("...",",").split(",")
     print (uh)
     if not(uh[1] in y.keys()):
         y[uh[1]] = [uh[0]]
