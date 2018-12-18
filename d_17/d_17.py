@@ -23,7 +23,6 @@ for i in file_lines:
         x[reeeee[0]] += 1
     oof = reeeee[1]
     uh = oof[0].split("...")
-    print (reeeee[1].type)
     if not(uh[1] in y.keys()):
         y[uh[1]] = [uh[0]]
     else:
