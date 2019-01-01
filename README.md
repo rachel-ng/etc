@@ -73,6 +73,8 @@ The constructor takes your cards and the game type (texas or omaha), and sorts y
 - [ ] implement comparable 
 - [ ] work on hands / possible hands / everything christ what was i trying to do 
 
+## In Progress
+
 ```
 poker/Pot.java
 ```
