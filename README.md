@@ -1,7 +1,6 @@
 # poker
 
-a terrible poker simulator  
-(wip)
+an unfinished poker simulator - mostly just a card simulator right now. 
 
 <!--
 ```
