@@ -1,6 +1,6 @@
-# poker
+# Poker
 
-an unfinished poker simulator - mostly just a card simulator right now. 
+An unfinished poker simulator - mostly just a card simulator at the moment. 
 
 <!--
 ```
@@ -19,57 +19,56 @@ poker/Calculations.java
 ```
 poker/Calculations.java
 ```
-not yet finished, barely even started. 
+Not yet finished, for calculating probability, etc. 
 
 ```
 poker/Card.java
 ```
-the card! 
 
-has a value and a suit, is comparable.
+Has a value and a suit, is comparable.
 
 ```
 poker/CommunityCards.java
 ```
-the community cards!
+The community cards!
 
-the `flop`, the `turn`, and the `river`
+The `flop`, the `turn`, and the `river`
 
 ```
 poker/Deck.java
 ```
-a `linked list` of cards, has an `int` for the number for cards left
+A `linked list` of cards, has an `int` for the number for cards left
 
-the constructor makes a deck of 52 cards with all values and suits and shuffles the deck. 
+The constructor makes a deck of 52 cards with all values and suits and shuffles the deck. 
 
-there are functions to `shuffle` the deck, `deal` a pocket, `burn` cards, draw the `flop`, and the `turn` and `river`
+There are functions to `shuffle` the deck, `deal` a pocket, `burn` cards, draw the `flop`, and the `turn` and `river`
 
 ```
 poker/Driver.java
 ```
-kind of obvious, was originally used to test the objects/functions, doesn't work anymore because i changed how i was doing some of the things, `poker/Game.java` is better for checking it out 
+Was originally used to test the objects/functions, doesn't work anymore because i changed how i was doing some of the things, `poker/Game.java` is better for checking it out! 
 
 ```
 poker/Game.java
 ```
-the game. 
+The game
 
 ```
 poker/Hand.java
 ```
-for checking "combos" i guess you could say 
+For checking "combos" i guess you could say 
 
 ```
 poker/Player.java
 ```
-creates a player with a name and pocket cards. 
+Creates a player with a name and pocket cards. 
 
 ```
 poker/Pocket.java
 ```
-the player's "hand", i suppose you could say. 
+The player's `hand`
 
-the constructor takes your cards and the game type (texas or omaha), and sorts your cards for you with . 
+The constructor takes your cards and the game type (texas or omaha), and sorts your cards for you with 
 
 - [ ] implement comparable 
 - [ ] work on hands / possible hands / everything christ what was i trying to do 
@@ -77,4 +76,4 @@ the constructor takes your cards and the game type (texas or omaha), and sorts y
 ```
 poker/Pot.java
 ```
-for betting! a wip
+For betting! A wip
