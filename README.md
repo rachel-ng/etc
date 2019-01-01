@@ -1,7 +1,6 @@
 # ti-84
 
 Rachel Ng's magical calculator programs.  
-Just in case my calculator ever gets cleared, because these were made with literallly 5000 tears. 
 
 ## Programs 
 In the order they appear in on my ti-84
