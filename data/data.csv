@@ -1,0 +1,11 @@
+num,date,details,detail_time,action_by_csr,csr_action_time,action_by_contractor,contractor_action_time,details,total_page_time,page_time_start,page_time_end
+1,2019-10-01T11:28:00.450Z,Call,11:28 AM,Initial call,11:28 AM - 11:45 AM,,,,,,
+2,2019-10-01T11:35:00.450Z,Downloaded attachment,11:35 AM,,,Downloaded floorplan,11:35 AM,,30 min,11:28 AM,11:58 AM
+3,2019-10-02T11:47:00.450Z,Left a comment,,,,Left a comment,11:47 AM,“how big is the tube?”,36 min,11:17 AM,11:53 AM
+4,2019-10-02T12:30:00.450Z,Emailed,12:30 PM,Email #1,12:30 PM,,,,,,
+5,2019-10-02T14:30:00.450Z,Email response,,,,Responded to email #1,2:30 PM,,,,
+6,2019-10-04T11:15:00.450Z,Requested site visit,11:15 AM,,,"Requested site visit on October 15, 2019 1 PM",11:15 AM,,1 hr 30 min,11:00 AM,12:30 PM
+7,2019-10-07T11:15:00.450Z,Call,,,,,,,,,
+8,2019-10-09T11:35:00.450Z,Emailed,,Email #2,,,,,,,
+9,2019-10-10T12:17:00.450Z,Submitted Bid,,,,Submitted Bid,12:17 PM,,1 hr 8 min,11:23 AM,12:31 PM
+10,2019-10-10T12:17:00.450Z,Submitted Bid,,,,Submitted Bid,12:17 PM,,,11:23 AM,12:31 PM
