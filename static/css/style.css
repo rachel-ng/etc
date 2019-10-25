@@ -1,38 +1,91 @@
-/* 13. Basic Styling with CSS */
+#content {
+    width: 80%;
+    margin: 100px auto 0 auto;
+}
 
-/* Style the lines by removing the fill and applying a stroke */
+#chart {
+    margin: 0 auto;
+}
+
 .line {
     fill: none;
-    stroke: #ffab00;
+    stroke: #555555;
     stroke-width: 3;
 }
-  
+
+.area {							
+    fill: url(#area-gradient);					
+    stroke-width: 0px;			
+}
+
 .overlay {
   fill: none;
   pointer-events: all;
 }
 
-/* Style the dots by assigning a fill and stroke */
 .dot {
-    fill: #ffab00;
     stroke: #ffffff;
+    stroke-width: 5;
 }
 
 .dot:hover {
     fill: #ffffff; 
-    stroke: #ffab00;
-    stroke-width: 3;
 }
 
 div.tooltip {	
     position: absolute;			
-    text-align: center;			
-    width: 100px;					
+    text-align: left;			
+    min-width: 100px;					
     height: auto;					
-    padding: 10px;				
+    padding: 20px 15px;
     font: 12px sans-serif;		
     background: #ffffff;	
     border: 0px;		
-    border-radius: 8px;
+    border-radius: 5px;
     pointer-events:none;
+}
+
+.icon {
+    height: 1.6em;
+    width: 1.6em;
+    font: bold 1.5em Arial;
+    line-height: 1.7em;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.details {
+    font: 1.15em Arial;
+}
+
+.bidded {
+    fill:#2AC869;
+}
+
+.dot.bidded:hover {
+    stroke:#2AC869;
+}
+
+.intending {
+    fill: #F8CF23;
+}
+
+.dot.intending:hover {
+    stroke: #F8CF23;
+}
+
+.reviewing {
+    fill: #A2A2A5;
+}
+
+.dot.reviewing:hover {
+    stroke: #A2A2A5;
+}
+
+.not-bidding {
+    fill: #D91B03;
+}
+
+.dot.not-bidding:hover {
+    stroke: #D91B03;
 }
