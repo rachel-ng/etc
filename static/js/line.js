@@ -3,24 +3,11 @@ var csv = "data/data.csv";
 d3.csv(csv, processRow).then(processData);
 
 function processRow (row, index, columnKeys) {
-    var time = row["date"];
     var split_time = row["date"].split("T")[1].split(":");
-    var d = 0;
     row["orig_time"] = parseInt(split_time);
-    row["date"] = d3.isoParse(time);
-    console.log(row["date"]);
+    row["date"] = d3.isoParse(row["date"]);
     row["offset"] = row["orig_time"] - parseInt(row["date"].toTimeString().split(" ")[0].split(":")[0]);
-    if (row["offset"] + row["date"].getHours() >= 24) {
-        d += 1;
-        row["offset"] = row["offset"] % 24;
-    }
-    let day = row["date"];
-    console.log(day);
-    day.setHours(row["fixed_time"]);
-    console.log(day);
-    day.setDate(day.getDate() + d);
-    console.log(day);
-    row["date"] = day; 
+    row["date"] = d3.timeHour.offset(row["date"],row["offset"]);
     row["num"] = parseInt(row["num"]);
     if (row["num"] > last) {
         last = row["num"];
@@ -31,44 +18,34 @@ function processRow (row, index, columnKeys) {
 function processData (data) {
     console.log(data, data.columns)
 
-    var offset;
     var dataset = data.map(function(d) { 
         console.log(d);
-        var split_time = d["date"].toTimeString().split(" ")[0].split(":");
-        var dct = {"x": d["date"], "y": (parseInt(split_time[0]) * 60) + parseInt(split_time[1])};
+        var dct = {"x": d["date"], "y": (d["date"].getHours() * 60) + d["date"].getMinutes()};
         Object.entries(d).forEach(([key, val]) => {
             dct[key] = val;
         });
-        offset = dct["offset"];
         return dct;
     });
     
-    var minHour = d3.min(dataset, function(d) { return d["fixed_time"];}) - offset;
+    var minHour = d3.min(dataset, function(d) { return d["date"].getHours();});
     if (minHour > 3) {
         minHour -= 1;
     }
-    if (minHour > 12) {
-        minHour = 9;
-    }
     
-    var maxHour = d3.max(dataset, function(d) { return d["fixed_time"];}) - offset;
-    if (maxHour > 18 && maxHour < 24) {
+    var maxHour = d3.max(dataset, function(d) { return d["date"].getHours();}) + 1;
+    if (maxHour > 20) {
+        maxHour = 24;
+    }
+    else if (maxHour >= 17) {
         maxHour += 1; 
     }
-    if (maxHour < 18) {
+    else if (maxHour < 17) {
         maxHour = 17;
     }
-
-
+    
     console.log(minHour);
     console.log(maxHour);
 
-    /*var padding = 0; // 3.6e+6 * ;//1.08e+8;
-
-    var minDate = d3.min(dataset, function(d) { return d["date"].getTime() - padding; }),
-        maxDate = d3.max(dataset, function(d) { return d["date"].getTime() + padding; });
-    */
-   
     // 2. Use the margin convention practice 
     // 5. X scale will use the index of our data
     var x = d3.scaleTime()
@@ -117,9 +94,8 @@ function processData (data) {
     svg.append("g")
         .attr("class", "y axis")
         .call(d3.axisLeft(y)
-            .tickValues(d3.range(25).map(function(n){return n * 60;}))
+            .tickValues(d3.range(minHour, maxHour + 1).map(function(n){return n * 60;}))
             .tickFormat(function(i){
-                console.log(timeStamps[i/60]);
                 return timeStamps[i/60];
             }));
 
@@ -196,7 +172,7 @@ function processData (data) {
         .attr("cy", function(d) { return y(d.y) })
         .attr("r", function(d) {
             if (d["num"] == last) {
-                return 15;   
+                return 12.5;   
             }
             else {
                 return 10;
