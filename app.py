@@ -4,7 +4,11 @@ app = Flask(__name__, static_url_path='/static')
 
 @app.route('/')
 def root():
-    return render_template("index.html")
+    return render_template("index.html", file="time")
+
+@app.route('/<fn>')
+def line(fn): 
+    return render_template("index.html", file=fn)
 
 @app.route('/data/<file_name>')
 def files(file_name):
