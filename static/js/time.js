@@ -24,11 +24,33 @@ function processData (data) {
 
     var dataset = data.map(function(d) { 
         if (d["page_time_end"]) {
-            var dct = {"x": d["page_time_end"], "y": (d["page_time_end"].getHours() * 60) + d["page_time_end"].getMinutes(), "y1": (d["page_time_start"].getHours() * 60) + d["page_time_start"].getMinutes(), "y3": (d["date"].getHours() * 60) + d["date"].getMinutes()};
+            var dct = {"x": d["date"], 
+            "y": (d["date"].getHours() * 60) + d["date"].getMinutes(), 
+            "x1": d["page_time_end"], 
+            "y1": (d["page_time_end"].getHours() * 60) + d["page_time_end"].getMinutes(), 
+            "y2": (d["page_time_start"].getHours() * 60) + d["page_time_start"].getMinutes()}; 
         }
         else {
-            var dct = {"x": d["date"], "y": 0, "y1": 0, "y3": (d["date"].getHours() * 60) + d["date"].getMinutes()};
+            var dct = {"x": d["date"], 
+            "y": (d["date"].getHours() * 60) + d["date"].getMinutes(),
+            "y1": 0, 
+            "y2": 0};
         }
+
+        /*
+        if (d["page_time_end"]) {
+            var dct = {"x": d["page_time_end"], 
+            "y3": (d["date"].getHours() * 60) + d["date"].getMinutes()};
+            "y": (d["page_time_end"].getHours() * 60) + d["page_time_end"].getMinutes(), 
+            "y1": (d["page_time_start"].getHours() * 60) + d["page_time_start"].getMinutes(), 
+        }
+        else {
+            var dct = {"x": d["date"], 
+            "y3": (d["date"].getHours() * 60) + d["date"].getMinutes()};
+            "y": 0, 
+            "y1": 0, 
+        }
+        */
         Object.entries(d).forEach(([key, val]) => {
             dct[key] = val;
         });
@@ -110,7 +132,7 @@ function processData (data) {
             return x(d.x);
         })
         .attr("y", function (d) {
-            return y(d.y);
+            return y(d.y1);
         })
         .attr("rx", x.bandwidth() / 2)
         .attr("ry", x.bandwidth() / 2)
@@ -147,7 +169,7 @@ function processData (data) {
             return c;
         })
         .attr("cx", function(d) { return x(d.x) + ((x.bandwidth())/ 2)})
-        .attr("cy", function(d) { return y(d.y3) })
+        .attr("cy", function(d) { return y(d.y) })
         .attr("r", x.bandwidth())
         .on("mouseover", function(a, b, c) { 
             console.log(a) 
