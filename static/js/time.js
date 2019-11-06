@@ -56,7 +56,9 @@ function processData (data) {
         });
         return dct;
     });
- 
+
+    console.log(dataset);
+
     var minHour = d3.min(dataset, function(d) { 
         if(d["page_time_start"]) {
             return d["page_time_start"].getHours();
@@ -91,11 +93,10 @@ function processData (data) {
         .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-
-    var x = d3.scaleBand()
-        .domain(dataset.map((d)=> {return d["x"];}))
-        .range([0, width])
-        .padding(0.85);
+    var x = d3.scaleTime()
+        .range([0, width]) // output
+        .domain(d3.extent(dataset, function(d) { return d.x; }))
+        .nice();
 
     var y = d3.scaleLinear()
         .domain([minHour * 60, maxHour * 60])
@@ -124,25 +125,18 @@ function processData (data) {
         .data(dataset)
         .enter().append("rect")
          .attr("class", function(d){
+            console.log(d);
             var c = "bar ";
             c += d["status"];
             return c;
         })
-        .attr("x", function (d) {
-            return x(d.x);
-        })
-        .attr("y", function (d) {
-            return y(d.y1);
-        })
-        .attr("rx", x.bandwidth() / 2)
-        .attr("ry", x.bandwidth() / 2)
-        .attr("width", x.bandwidth())
-        .attr("height", function (d) {
-            console.log(x.bandwidth());
-            return height - y(d.y1);;
-        })
+        .attr("x", function (d) { return x(d.x) - 5; })
+        .attr("y", function (d) { return y(d.y1); })
+        .attr("rx", 5)
+        .attr("ry", 5)
+        .attr("width", 10) 
+        .attr("height", function (d) { return y(d.y2) - y(d.y1); })
         .on("mouseover", function(a, b, c) { 
-            console.log(a)
             let time = a["page_time_end"] - a["page_time_start"];
             let convertm = 1000 * 60;
             let converth = 1000 * 3600;
@@ -159,7 +153,7 @@ function processData (data) {
             .duration(200)		
             .style("opacity", 0);	
 		})
-
+/*
     svg.selectAll(".dot")
         .data(dataset)
         .enter().append("circle") // Uses the enter().append() method
@@ -172,7 +166,6 @@ function processData (data) {
         .attr("cy", function(d) { return y(d.y) })
         .attr("r", x.bandwidth())
         .on("mouseover", function(a, b, c) { 
-            console.log(a) 
        		div.transition()		
                 .duration(150)		
                 .style("opacity", .9);	
@@ -186,6 +179,5 @@ function processData (data) {
             .duration(200)		
             .style("opacity", 0);	
 		})
-
-
+*/
 }

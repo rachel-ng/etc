@@ -32,6 +32,9 @@
     fill: #ffffff; 
 }
 
+.bar {
+}
+
 div.tooltip {	
     position: absolute;			
     text-align: left;			
@@ -58,32 +61,52 @@ div.tooltip {
     font: 1.15em Arial;
 }
 
+/* green */
 .bidded {
     fill:#2AC869;
+}
+
+.bar.bidded {
+    fill:#007C1D;
 }
 
 .dot.bidded:hover {
     stroke:#2AC869;
 }
 
+/* yellow */
 .intending {
     fill: #F8CF23;
+}
+
+.bar.intending {
+    fill:#AC8300;
 }
 
 .dot.intending:hover {
     stroke: #F8CF23;
 }
 
+/* grey */
 .reviewing {
     fill: #A2A2A5;
+}
+
+.bar.reviewing {
+    fill:#565659;
 }
 
 .dot.reviewing:hover {
     stroke: #A2A2A5;
 }
 
+/* red */
 .not-bidding {
     fill: #D91B03;
+}
+
+.bar.not-bidding {
+    fill:#8D0000;
 }
 
 .dot.not-bidding:hover {

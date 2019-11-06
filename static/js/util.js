@@ -11,6 +11,8 @@ var timeStamps = ["12:00 AM", "1:00 AM", "2:00 AM", "3:00 AM", "4:00 AM", "5:00 
 
 var colors = {"bidded": "#2AC869", "intending": "#F8CF23", "reviewing": "#E46E00", "not-bidding": "#D91B03"};
 var status_colors = {"bidded": "#2AC869", "intending": "#F8CF23", "reviewing": "#A2A2A5", "not-bidding": "#D91B03"};
+var statuses = ["", "not bidding", "reviewing", "intending", "bidded"];
+var stat = {"not-bidding": 1, "reviewing": 2, "intending": 3, "bidded": 4};
 
 var mdformat = d3.timeFormat("%b %e");
 var tformat = d3.timeFormat("%I:%M %p");
@@ -21,5 +23,9 @@ Array.prototype.sortBy = function(p) {
     return this.slice(0).sort(function(a,b) {
       return (a[p] > b[p]) ? 1 : (a[p] < b[p]) ? -1 : 0;
     });
+}
+
+function newDate (a, m, d, h) {
+    return new Date(a.getFullYear(), a.getMonth() + m, a.getDate() + d, h);
 }
 

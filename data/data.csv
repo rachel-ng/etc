@@ -1,10 +1,11 @@
 num,date,status,details,detail_time,action_by_csr,csr_action_time,csr_action_time_end,action_by_contractor,contractor_action_time,contractor_action_time_end,contractor_details,total_page_time,page_time_start,page_time_end
 1,2019-10-01T10:28:00.450Z,not-bidding,CSR Call,2019-10-01T10:28:00.450Z,Initial call,2019-10-01T10:28:00.450Z,2019-10-01T11:48:00.450Z,,,,,,,
-2,2019-10-01T15:45:00.450Z,not-bidding,Downloaded attachment,2019-10-01T15:45:00.450Z,,,,Downloaded floorplan,2019-10-01T15:45:00.450Z,,,30 min,2019-10-01T15:38:00.450Z,2019-10-01T16:48:00.450Z
-3,2019-10-02T13:47:00.450Z,not-bidding,Left a comment,,,,,Left a comment,2019-10-02T13:47:00.450Z,,“how big is the tube?”,36 min,2019-10-02T13:47:00.450Z,2019-10-02T14:18:00.450Z
-4,2019-10-03T15:30:00.450Z,reviewing,CSR Emailed,2019-10-02T15:30:00.450Z,Email #1,2019-10-02T15:30:00.450Z,,,,,,,,
-5,2019-10-04T16:14:00.450Z,reviewing,Email response,,,,,Responded to email #1,2019-10-02T16:14:00.450Z,,,,,
-6,2019-10-05T20:14:00.450Z,intending,Requested site visit,2019-10-05T20:14:00.450Z,,,,"Requested site visit on October 15, 2019 1 PM",2019-10-05T20:14:00.450Z,,,1 hr 30 min,2019-10-04T11:00:00.450Z,2019-10-04T12:30:00.450Z
-7,2019-10-07T12:38:00.450Z,intending,CSR Call,,,,,,,,,,,
-8,2019-10-09T11:35:00.450Z,intending,CSR Emailed,,Email #2,,,,,,,,,
-9,2019-10-10T12:17:00.450Z,bidded,Submitted Bid,,,,,Submitted Bid,2019-10-10T12:17:00.450Z,,,1 hr 8 min,2019-10-10T12:17:00.450Z,2019-10-10T12:31:00.450Z
+2,2019-10-01T15:45:00.450Z,not-bidding,Downloaded attachment,2019-10-01T15:45:00.450Z,,,,Downloaded floorplan,2019-10-01T15:45:00.450Z,,,,2019-10-01T15:38:00.450Z,2019-10-01T16:48:00.450Z
+3,2019-10-02T13:47:00.450Z,not-bidding,Left a comment,,,,,Left a comment,2019-10-02T13:47:00.450Z,,“how big is the tube?”,,2019-10-02T13:23:00.450Z,2019-10-02T14:18:00.450Z
+4,2019-10-03T13:30:00.450Z,reviewing,CSR Emailed,2019-10-03T13:30:00.450Z,Email #1,2019-10-03T13:30:00.450Z,,,,,,,,
+5,2019-10-03T16:27:00.450Z,reviewing,Email viewed,2019-10-03T16:27:00.450Z,,,,,,,,,2019-10-03T16:27:00.450Z,2019-10-03T17:23:00.450Z
+6,2019-10-04T16:14:00.450Z,reviewing,Email response,,,,,Responded to email #1,2019-10-02T16:14:00.450Z,,,,,
+7,2019-10-05T20:14:00.450Z,intending,Requested site visit,2019-10-05T20:14:00.450Z,,,,"Requested site visit on October 15, 2019 1 PM",2019-10-05T20:14:00.450Z,,,,2019-10-05T19:48:00.450Z,2019-10-05T20:30:00.450Z
+8,2019-10-07T12:38:00.450Z,intending,CSR Call,,,,,,,,,,,
+9,2019-10-09T11:35:00.450Z,intending,CSR Emailed,,Email #2,,,,,,,,,
+10,2019-10-10T13:17:00.450Z,bidded,Submitted Bid,,,,,Submitted Bid,2019-10-10T13:17:00.450Z,,,,2019-10-10T11:27:00.450Z,2019-10-10T13:48:00.450Z
