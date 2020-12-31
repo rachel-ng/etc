@@ -1,0 +1,14 @@
+Input = "R = ", R
+Menu("CIRCLES","AREA",A,"CIRCUMFERENCE",C,"DIAMETER",D)
+
+Lbl A
+Disp "A= R^2 PI", R^2 PI
+Stop
+
+Lbl C
+Disp "C= 2 R PI", 2 R PI
+Stop
+
+Lbl D
+Disp "D= 2 R", 2R
+Stop

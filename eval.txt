@@ -1,0 +1,7 @@
+Disp "EVALUATE" 
+Input "X= ",L1
+Input "Y= ",L2
+Input "y1= ",Y1
+
+Disp Y1(L1)
+Disp L2
