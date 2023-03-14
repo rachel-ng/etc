@@ -1,0 +1,1 @@
+`glitch.json` help Glitch know how to setup and run this project using non-standard web server
